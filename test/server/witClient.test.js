@@ -8,7 +8,7 @@ describe('witClient', () => {
     describe('ask', () => {
         it('should return a valid wit response', (done) => {
 
-            const witClient = new WitClient(config.witToken);
+            const witClient = new WitClient(config.WitToken);
 
             witClient.ask('What is the current time in Vienna?', (err, response) => {
                 if(err) return done(err);
